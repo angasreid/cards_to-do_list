@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require best_in_place
 //= require turbolinks
 //= require_tree .
 
@@ -19,4 +20,6 @@ $(document).on('ready page:load', function () {
 	$(document).on('ajax:success', '.nav', function() {
 		$(this).closest('.card').fadeOut();
 	});
+	$(".best_in_place").best_in_place();
+
 });			

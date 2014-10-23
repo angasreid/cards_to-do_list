@@ -10,9 +10,20 @@ class CardsController < ApplicationController
 	end
 
 
-	def update
-
-	end
+def update
+@card = Card.find(params[:id])
+    if @card.update(params.require(:card).permit(:title, :body))
+      respond_to do |format|
+        format.html { redirect_to @card.project, notice: 'Card was successfully updated!' }
+        format.json { respond_with_bip(@card) }
+      end
+    else
+      respond_to do |format|
+        format.html { redirect_to @card.project, notice: 'Something went wrong' }
+        format.json { respond_with_bip(@card) }
+    end
+  end
+  end
 
 
 	def destroy
