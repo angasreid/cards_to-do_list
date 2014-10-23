@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require best_in_place
 //= require turbolinks
@@ -21,5 +22,7 @@ $(document).on('ready page:load', function () {
 		$(this).closest('.card').fadeOut();
 	});
 	$(".best_in_place").best_in_place();
-
+	$("#board").sortable({
+		appendTo: $('#board')
+	});
 });			
