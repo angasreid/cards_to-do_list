@@ -13,7 +13,13 @@ class CardsController < ApplicationController
 
 
 	def destroy
-
+		@card = Card.find(params[:id])
+		@project = Project.find(params[:project_id])
+		@card.destroy
+		respond_to do |format|
+			format.html { redirect_to @project, notice: "Card deleted" }
+			format.js { head :no_content }
+		end
 	end
 
 end
