@@ -16,8 +16,7 @@
 //= require_tree .
 
 $(document).on('ready page:load', function () {
-	$('.nav').on('ajax:success', function() {
+	$(document).on('ajax:success', '.nav', function() {
 		$(this).closest('.card').fadeOut();
-
 	});
-});	
+});			
