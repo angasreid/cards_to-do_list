@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 gem 'best_in_place'
 gem 'jquery-ui-rails'
+gem 'quiet_assets'
 # Use unicorn as the app server
 # gem 'unicorn'
 

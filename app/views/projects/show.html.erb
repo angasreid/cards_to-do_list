@@ -1,4 +1,4 @@
-<div id="board">
+<div id="board" data-update-url="<%= sort_project_cards_path(@project) %>">
 
 	<%= render partial: 'cards/card', collection: @project.cards %>
 
