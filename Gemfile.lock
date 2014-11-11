@@ -40,6 +40,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    daemon_controller (1.2.0)
     devise (3.4.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -66,6 +67,10 @@ GEM
     minitest (5.4.2)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+    passenger (4.0.53)
+      daemon_controller (>= 1.2.0)
+      rack
+      rake (>= 0.8.1)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
@@ -134,6 +139,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-ui-rails
+  passenger
   quiet_assets
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
