@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fangasreid%2Fcards_to-do_list.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fangasreid%2Fcards_to-do_list?ref=badge_shield)
+
 == README
 
 This README would normally document whatever steps are necessary to get the
@@ -26,3 +28,7 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fangasreid%2Fcards_to-do_list.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fangasreid%2Fcards_to-do_list?ref=badge_large)
